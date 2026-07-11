@@ -1,0 +1,1153 @@
+{
+  "updated": "2026-07-11",
+  "source": "DistroKid via Sena_controleoverzicht_tracks.csv (snapshot 2026-07-01) + releasekalender",
+  "artist": {
+    "name": "Ydil Woods",
+    "spotify": "https://open.spotify.com/artist/68lLu2kEyx9OubheZYsEp0",
+    "youtube": "https://www.youtube.com/@ydilwoods",
+    "instagram": "https://instagram.com/ydilwoods",
+    "image": "https://i.scdn.co/image/ab676161000051748169723dfaba30c65a0ffc07"
+  },
+  "releases": [
+    {
+      "slug": "chasing-starlight",
+      "title": "Chasing Starlight",
+      "artist": "Ydil Woods",
+      "date": "2026-07-24",
+      "status": "presave",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [],
+      "cover": null,
+      "featured": true,
+      "links": {
+        "presave": null,
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "in-the-clouds",
+      "title": "In the Clouds",
+      "artist": "Ydil Woods",
+      "date": "2026-08-21",
+      "status": "announced",
+      "versions": [],
+      "isrcs": [],
+      "cover": null,
+      "featured": true,
+      "links": {}
+    },
+    {
+      "slug": "if-we-fall-we-rise",
+      "title": "If we fall, we rise",
+      "artist": "Ydil Woods",
+      "date": "2026-06-26",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QT3FC2620722"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e026c3d2acb760ba53d4aaec9ac",
+      "featured": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/3nI9ukt8Qh2JSlwwLGVApr",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/3rQESVEPdrZMBCvj6D710E"
+      }
+    },
+    {
+      "slug": "pure-energy",
+      "title": "Pure Energy",
+      "artist": "Ydil Woods",
+      "date": "2026-05-29",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZZ7T2626742",
+        "QZZ7T2626743"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e02c9116dd10e8d06c0d677d581",
+      "featured": true,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6JCB6dlaJrgPgTnVQcRFMm",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/3yvSJEfMnnrC3nL35WMf9C"
+      }
+    },
+    {
+      "slug": "summerbrooke-nights",
+      "title": "Summerbrooke Nights",
+      "artist": "Ydil Woods, RIXOM",
+      "date": "2026-05-01",
+      "status": "released",
+      "versions": [
+        "Extended Version",
+        "Original"
+      ],
+      "isrcs": [
+        "QZTBA2622414",
+        "QZTB42627729"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e020af27ce5d6d5205ba897877b",
+      "featured": true,
+      "links": {
+        "spotify": "https://open.spotify.com/album/2yC6t1OsZ09PU47qREb8Xx",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/3aGtWkmiyNhIGQ1vVvQFSy"
+      }
+    },
+    {
+      "slug": "eyes-closed",
+      "title": "Eyes Closed",
+      "artist": "Ydil Woods",
+      "date": "2026-04-03",
+      "status": "released",
+      "versions": [
+        "Extended Version",
+        "Original"
+      ],
+      "isrcs": [
+        "QZNWU2683945",
+        "QZNWU2683609"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e027c47be2e5fefe6f184ab1c38",
+      "featured": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/5lwPkosWWtvRQdsDeX455l",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/069NlOJFiDjc6gERn7qXwH"
+      }
+    },
+    {
+      "slug": "hold-the-sky",
+      "title": "Hold the Sky",
+      "artist": "Ydil Woods",
+      "date": "2026-03-06",
+      "status": "released",
+      "versions": [
+        "Extended Version",
+        "Original"
+      ],
+      "isrcs": [
+        "QZK6N2629309",
+        "QZK6N2622542"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e020c566685f29ade402c7d8694",
+      "featured": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/5wX81H1Qz1A3meHGhoXAB9",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/2RrE0P2tNK3TTbeAJ4jJOC"
+      }
+    },
+    {
+      "slug": "heart-is-pumping",
+      "title": "Heart is Pumping",
+      "artist": "Ydil Woods",
+      "date": "2026-01-23",
+      "status": "released",
+      "versions": [
+        "Pure Trance Version",
+        "Extended Version",
+        "Original"
+      ],
+      "isrcs": [
+        "QZHN32609871",
+        "QZHN32604644",
+        "QZDA62630488"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e02e6025b2ddaa6b0c80036e982",
+      "featured": true,
+      "links": {
+        "spotify": "https://open.spotify.com/track/4l3M78g2SKP1xkTLXPd8iJ",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/4l3M78g2SKP1xkTLXPd8iJ"
+      }
+    },
+    {
+      "slug": "infinite-embrace",
+      "title": "Infinite Embrace",
+      "artist": "Ydil Woods",
+      "date": "2025-05-02",
+      "status": "released",
+      "versions": [
+        "Short Edit",
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZMEN2504989",
+        "QZK6F2589649",
+        "QZK6F2598198"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e0295d5234111abc6ab26e6087a",
+      "featured": true,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6z7SdM61Pb6fHVih9FdK46",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/6PWWEbecNmM0fxCEip8RrJ"
+      }
+    },
+    {
+      "slug": "heart-of-a-champion",
+      "title": "Heart of a Champion",
+      "artist": "Ydil Woods",
+      "date": "2025-04-11",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZHN92597937",
+        "QZHN92597938"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e022cc71ee6826f6d1d3a337da9",
+      "featured": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/1cgrnweLLEOyL5yAYW6XVj",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/1WdUn2VIgZzLZV7IYgahNL"
+      }
+    },
+    {
+      "slug": "only-you",
+      "title": "Only You",
+      "artist": "Ydil Woods",
+      "date": "2025-02-21",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZDA42503014",
+        "QZDA42503015"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e028d9d3c3844fec2bc323eab06",
+      "featured": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/3dbbMq7CIBhoaSbNvbvizs",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/6e0LBkpdTIJNTkDFIzUhPY"
+      }
+    },
+    {
+      "slug": "do-anything",
+      "title": "Do Anything",
+      "artist": "Ydil Woods",
+      "date": "2025-01-03",
+      "status": "released",
+      "versions": [
+        "Short Edit",
+        "Original",
+        "DJ LaMore Remix",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZNWR2570337",
+        "QZZ7W2436472",
+        "QZHNC2535336",
+        "QZZ7W2472606"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e02ee10ed3b50a2cbfe2d26aa79",
+      "featured": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/1tUf64hEhvaPntUSbBYgyk",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/1tUf64hEhvaPntUSbBYgyk"
+      }
+    },
+    {
+      "slug": "alone",
+      "title": "Alone",
+      "artist": "Ydil Woods",
+      "date": "2024-12-20",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZWFR2430658",
+        "QZWFR2479273"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "the-empty-space",
+      "title": "The Empty Space",
+      "artist": "Ydil Woods & DJ LaMore",
+      "date": "2024-12-13",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZZ7L2411590",
+        "QZZ7L2411591"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "you-just-make-me",
+      "title": "You Just Make Me",
+      "artist": "Ydil Woods",
+      "date": "2024-12-06",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZZ7L2413353",
+        "QZZ7M2452957"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "everything-you-want",
+      "title": "Everything You Want",
+      "artist": "Ydil Woods",
+      "date": "2024-11-22",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZZ792480179"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "classic-journey",
+      "title": "Classic Journey",
+      "artist": "Ydil Woods",
+      "date": "2024-10-25",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZWFM2461103",
+        "QZWFP2458927"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e02159c5acbcc034fc95c8c8fc7",
+      "featured": true,
+      "links": {
+        "spotify": "https://open.spotify.com/track/1kITtcjJH0TcLl4TBG1XUN",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/1kITtcjJH0TcLl4TBG1XUN"
+      }
+    },
+    {
+      "slug": "a-new-day",
+      "title": "a new day",
+      "artist": "Ydil Woods",
+      "date": "2024-10-11",
+      "status": "released",
+      "versions": [
+        "vocal dub",
+        "Original"
+      ],
+      "isrcs": [
+        "QZWFM2459885",
+        "QZWFM2459886"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "love-of-yesterday",
+      "title": "Love of Yesterday",
+      "artist": "Ydil Woods",
+      "date": "2024-07-19",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZPLR2454298",
+        "QZNWX2494484"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "stellar-pulsar",
+      "title": "Stellar Pulsar",
+      "artist": "Ydil Woods & DJ LaMore",
+      "date": "2024-05-31",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZHN72422471"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "photonic-pulsar",
+      "title": "Photonic Pulsar",
+      "artist": "Ydil Woods & DJ LaMore",
+      "date": "2024-05-17",
+      "status": "released",
+      "versions": [
+        "Ydil Woods Remix",
+        "Original"
+      ],
+      "isrcs": [
+        "QZHN72453955",
+        "QZHN42464304"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "you-re-special",
+      "title": "You're Special",
+      "artist": "Ydil Woods",
+      "date": "2024-03-31",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Sarah Sue Jones Remix"
+      ],
+      "isrcs": [
+        "QZPLR2453009",
+        "QZPLS2453193"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "missing-the-days",
+      "title": "Missing the Days",
+      "artist": "Ydil Woods",
+      "date": "2024-03-31",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZNWU2414513",
+        "QZNWU2486000"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "don-t-be-sad-feat-ayla-jay",
+      "title": "Don't Be Sad (feat. Ayla Jay)",
+      "artist": "Ydil Woods",
+      "date": "2024-03-31",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZHN92452253"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "baby-don-t-go",
+      "title": "Baby Don't Go",
+      "artist": "Ydil Woods",
+      "date": "2024-03-16",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZHN32434687",
+        "QZHN32489188"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "kiss-the-night-goodbye",
+      "title": "Kiss the Night Goodbye",
+      "artist": "Ydil Woods",
+      "date": "2024-02-16",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZDA72436872",
+        "QZHN32401075"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "not-like-you",
+      "title": "Not Like You",
+      "artist": "Ydil Woods",
+      "date": "2024-02-16",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZFZ22460393"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "to-the-edge",
+      "title": "To the Edge",
+      "artist": "Ydil Woods",
+      "date": "2024-01-18",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZFYZ2485309",
+        "QZDA62420569"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "beautiful-liar",
+      "title": "Beautiful Liar",
+      "artist": "Ydil Woods",
+      "date": "2024-01-18",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZHNA2207776"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "distorted-blitz",
+      "title": "Distorted Blitz",
+      "artist": "Ydil Woods",
+      "date": "2023-12-28",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended 138 BPM Banger Version"
+      ],
+      "isrcs": [
+        "QZWFK2371360",
+        "QZWFK2371361"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "radiant-pulsar",
+      "title": "Radiant Pulsar",
+      "artist": "Ydil Woods & DJ LaMore",
+      "date": "2023-12-15",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZWFL2312852"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "cosmic-pulsar",
+      "title": "Cosmic Pulsar",
+      "artist": "Ydil Woods & DJ LaMore",
+      "date": "2023-12-15",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZWFL2312853"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "waves-feat-ayla-jay",
+      "title": "Waves (feat. Ayla Jay)",
+      "artist": "Ydil Woods",
+      "date": "2023-12-08",
+      "status": "released",
+      "versions": [
+        "Ayla Jay Remix"
+      ],
+      "isrcs": [
+        "QZWFG2301051"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "tropical-sun",
+      "title": "Tropical Sun",
+      "artist": "Ydil Woods & Ayla Jay",
+      "date": "2023-11-10",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZTBF2353045"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "hydra",
+      "title": "Hydra",
+      "artist": "Ydil Woods & DJ LaMore",
+      "date": "2023-10-23",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZTAW2384763"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "point-of-no-return",
+      "title": "Point of No Return",
+      "artist": "Ydil Woods",
+      "date": "2023-10-10",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version",
+        "Vocal Version"
+      ],
+      "isrcs": [
+        "QZTAW2387015",
+        "QZTAW2387014",
+        "QZTAW2387017"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "journey-to-light",
+      "title": "Journey to Light",
+      "artist": "Ydil Woods",
+      "date": "2023-09-11",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZPLS2377313",
+        "QZPLS2376492"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e02ed11bc9ae97bc76520f3fc19",
+      "featured": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/06e5nipXUcNd0R9oRrKuWV",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/17t0qHCirQDJkUTgYAFgOm"
+      }
+    },
+    {
+      "slug": "waves",
+      "title": "Waves",
+      "artist": "Ydil Woods",
+      "date": "2023-08-31",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Ydil Woods Sunset Cocktail Chillout Mix"
+      ],
+      "isrcs": [
+        "QZPLS2376133",
+        "QZPLS2377302"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "miracle",
+      "title": "Miracle",
+      "artist": "Ydil Woods",
+      "date": "2023-08-17",
+      "status": "released",
+      "versions": [
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZNWT2333038"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "coconut",
+      "title": "Coconut",
+      "artist": "Ydil Woods",
+      "date": "2023-08-04",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Ayla Jay Remix"
+      ],
+      "isrcs": [
+        "QZMEN2325022",
+        "QZWFE2376707"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "damnentia",
+      "title": "Damnentia",
+      "artist": "Ydil Woods",
+      "date": "2023-07-21",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZK6K2332461",
+        "QZK6K2332460"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "my-bread-and-love-chillout-mix",
+      "title": "My Bread and Love (Chillout Mix))",
+      "artist": "Ydil Woods",
+      "date": "2023-05-30",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZHNC2370438"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "far-away",
+      "title": "Far Away",
+      "artist": "Ydil Woods",
+      "date": "2023-04-19",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZHN62312304"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "vibes-of-freedom",
+      "title": "Vibes of Freedom",
+      "artist": "Ydil Woods",
+      "date": "2023-03-31",
+      "status": "released",
+      "versions": [
+        "Original"
+      ],
+      "isrcs": [
+        "QZES62399754"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "marp-138",
+      "title": "Marp 138",
+      "artist": "Ydil Woods",
+      "date": "2022-12-22",
+      "status": "released",
+      "versions": [
+        "Club Mix",
+        "Original",
+        "Mix Cut"
+      ],
+      "isrcs": [
+        "QZK6M2328743",
+        "QZHN82357051",
+        "QZTB62206585"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "my-bread-and-love",
+      "title": "My Bread and Love",
+      "artist": "Ydil Woods",
+      "date": "2022-12-22",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Mix Cut"
+      ],
+      "isrcs": [
+        "QZHNC2370437",
+        "QZTB62206580"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "soleil",
+      "title": "Soleil",
+      "artist": "Ydil Woods",
+      "date": "2022-12-15",
+      "status": "released",
+      "versions": [
+        "Mix Cut",
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZTB62206579",
+        "QZTAS2295583",
+        "QZTAS2295584"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "lydia",
+      "title": "Lydia",
+      "artist": "Ydil Woods",
+      "date": "2022-12-02",
+      "status": "released",
+      "versions": [
+        "5th Heaven Tribute Mix",
+        "5th Heaven Tribute Extended Mix",
+        "Original",
+        "Extended Version",
+        "Mix Cut"
+      ],
+      "isrcs": [
+        "QZDA42533981",
+        "QZDA42533982",
+        "QZTAS2295582",
+        "QZNWS2351248",
+        "QZTB62206583"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00001e02fbb1fd0d3edcf0f051488dec",
+      "featured": true,
+      "links": {
+        "spotify": "https://open.spotify.com/track/3OFrZlcb8x0ArtdfxAIP32",
+        "apple": null,
+        "youtube": null,
+        "spotify_track": "https://open.spotify.com/track/3OFrZlcb8x0ArtdfxAIP32"
+      }
+    },
+    {
+      "slug": "branches",
+      "title": "Branches",
+      "artist": "Ydil Woods",
+      "date": "2022-11-11",
+      "status": "released",
+      "versions": [
+        "Mix Cut",
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [
+        "QZTB62206584",
+        "QZTAS2294812",
+        "QZTAS2294813"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "touch-of-sky",
+      "title": "Touch of Sky",
+      "artist": "Ydil Woods",
+      "date": "2022-09-23",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Mix Cut"
+      ],
+      "isrcs": [
+        "QZNWS2219972",
+        "QZTB62206578"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "into-the-unknown",
+      "title": "Into the Unknown",
+      "artist": "Ydil Woods",
+      "date": "2022-07-26",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Mix Cut",
+        "Instrumental Version"
+      ],
+      "isrcs": [
+        "QZMEM2201535",
+        "QZTB62206581",
+        "QZMEM2201536"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "a-beautiful-liar",
+      "title": "A Beautiful Liar",
+      "artist": "Ydil Woods",
+      "date": "2022-05-06",
+      "status": "released",
+      "versions": [
+        "Mix Cut",
+        "Radio Edit"
+      ],
+      "isrcs": [
+        "QZTB62206582",
+        "QZHN72220458"
+      ],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    }
+  ],
+  "embed_latest": "https://open.spotify.com/embed/album/3nI9ukt8Qh2JSlwwLGVApr"
+}
