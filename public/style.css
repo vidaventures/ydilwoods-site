@@ -42,6 +42,12 @@ h2.sec em{-webkit-text-stroke:1.5px var(--ink);color:transparent;font-style:ital
 .band{background:linear-gradient(90deg,rgba(139,92,246,.14),rgba(233,53,193,.10));border-top:1px solid rgba(139,92,246,.3);border-bottom:1px solid rgba(139,92,246,.3)}
 .band p{max-width:700px;font-size:20px;line-height:1.65;font-weight:300}
 .band b{font-weight:700;color:var(--gold)}
+.band-wrap{display:flex;gap:48px;align-items:center;flex-wrap:wrap}
+.artist-photo{width:200px;height:200px;border-radius:50%;object-fit:cover;flex-shrink:0;
+ box-shadow:0 0 0 3px rgba(139,92,246,.55),0 0 60px rgba(233,53,193,.35)}
+.about-grid{display:grid;grid-template-columns:280px 1fr;gap:44px;align-items:start}
+@media(max-width:700px){.about-grid{grid-template-columns:1fr}}
+.about-photo{width:100%;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 60px rgba(139,92,246,.25)}
 footer{position:relative;z-index:1;padding:38px 5vw;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:13px}
 footer a{color:var(--ink);text-decoration:none;margin-left:20px;font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
 footer a:hover{color:var(--magenta)}

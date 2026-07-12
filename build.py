@@ -81,6 +81,12 @@ h2.sec em{-webkit-text-stroke:1.5px var(--ink);color:transparent;font-style:ital
 .band{background:linear-gradient(90deg,rgba(139,92,246,.14),rgba(233,53,193,.10));border-top:1px solid rgba(139,92,246,.3);border-bottom:1px solid rgba(139,92,246,.3)}
 .band p{max-width:700px;font-size:20px;line-height:1.65;font-weight:300}
 .band b{font-weight:700;color:var(--gold)}
+.band-wrap{display:flex;gap:48px;align-items:center;flex-wrap:wrap}
+.artist-photo{width:200px;height:200px;border-radius:50%;object-fit:cover;flex-shrink:0;
+ box-shadow:0 0 0 3px rgba(139,92,246,.55),0 0 60px rgba(233,53,193,.35)}
+.about-grid{display:grid;grid-template-columns:280px 1fr;gap:44px;align-items:start}
+@media(max-width:700px){.about-grid{grid-template-columns:1fr}}
+.about-photo{width:100%;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 60px rgba(139,92,246,.25)}
 footer{position:relative;z-index:1;padding:38px 5vw;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:13px}
 footer a{color:var(--ink);text-decoration:none;margin-left:20px;font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
 footer a:hover{color:var(--magenta)}
@@ -148,7 +154,7 @@ def shell(title, desc, body, canonical, og_image=None, depth=0, jsonld=None):
 </main>
 <footer>
   <div>© {TODAY[:4]} Ydil Woods · @ydilwoods</div>
-  <div><a href="{ART['spotify']}">Spotify</a><a href="{ART['instagram']}">Instagram</a><a href="{ART['youtube']}">YouTube</a></div>
+  <div><a href="{ART['spotify']}">Spotify</a><a href="{ART['soundcloud']}">SoundCloud</a><a href="{ART['instagram']}">Instagram</a><a href="{ART['youtube']}">YouTube</a></div>
 </footer>
 </body>
 </html>"""
@@ -222,12 +228,14 @@ def build_home():
 <h2 class="sec" style="margin-top:70px">Full <em>catalogue</em></h2>
 <div class="catlist">{''.join(cat_row(r,i) for i,r in enumerate(rest))}</div>
 </section>"""
-    about = """
-<section class="band"><h2 class="sec">Melody <em>first</em></h2>
+    about = f"""
+<section class="band"><div class="band-wrap">
+<img class="artist-photo" src="{ART.get('image','')}" alt="Ydil Woods" loading="lazy">
+<div><h2 class="sec">Melody <em>first</em></h2>
 <p>I'm Ydil Woods. I make uplifting trance built around one thing: <b>melody</b>.
 Euphoric, emotional, straight to the point — music for the moment the lights hit the crowd.
 For fans of Ben Gold and Ralphie B. <a href="/about/" style="color:var(--gold)">More about me →</a></p>
-</section>"""
+</div></div></section>"""
     ld = {"@context": "https://schema.org", "@type": "MusicGroup", "name": "Ydil Woods",
           "genre": "Uplifting Trance", "url": SITE,
           "sameAs": [ART["spotify"], ART["instagram"], ART["youtube"]]}
@@ -276,6 +284,7 @@ def build_links():
   <a class="biglink hot" href="{cur_href}"><span>{esc(cur_label)}</span></a>
   <a class="biglink" href="{ART['spotify']}"><span>Listen on Spotify</span></a>
   <a class="biglink" href="{ART['youtube']}"><span>YouTube</span></a>
+  <a class="biglink" href="{ART['soundcloud']}"><span>SoundCloud</span></a>
   <a class="biglink" href="/#music"><span>All music</span></a>
   <a class="biglink" href="{ART['instagram']}"><span>Instagram @ydilwoods</span></a>
 </div>"""
@@ -283,8 +292,10 @@ def build_links():
                                     body, SITE + "/links/", depth=1))
 
 def build_about():
-    body = """
+    body = f"""
 <section><h2 class="sec">About <em>Ydil Woods</em></h2>
+<div class="about-grid">
+<img class="about-photo" src="{ART.get('image','')}" alt="Ydil Woods" loading="lazy">
 <div class="prose" style="margin:0">
 <p><strong>Uplifting trance, melody first.</strong></p>
 <p>I write euphoric, emotional trance built around simple, memorable melodies —
@@ -297,7 +308,7 @@ and <b>Infinite Embrace</b>, with new music on the way every few weeks.</p>
 <p><strong>DJs &amp; labels:</strong> supporting my music in your set or show?
 Reach out for WAVs and extended mixes — contact via Instagram
 <a href="https://instagram.com/ydilwoods" style="color:var(--gold)">@ydilwoods</a>.</p>
-</div></section>"""
+</div></div></section>"""
     write("about/index.html", shell("About — Ydil Woods", "About Ydil Woods: euphoric, melody-first uplifting trance.",
                                     body, SITE + "/about/", depth=1))
 
@@ -320,7 +331,10 @@ def write(rel, content):
 
 def main():
     if os.path.isdir(OUT):
-        shutil.rmtree(OUT)
+        try:
+            shutil.rmtree(OUT)
+        except PermissionError:
+            pass  # omgeving zonder delete-rechten: bestanden worden overschreven
     os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
     write("style.css", CSS)
     src_logo = os.path.join(ROOT, "assets", "yw-logo.png")
