@@ -273,15 +273,23 @@ def build_release(r, i):
                 og_image=big_cover(r.get("cover")), depth=1, jsonld=ld))
 
 def build_links():
-    current = next((r for r in RELEASES if r["status"] == "presave"), RELEASES[0])
-    cur_href = current.get("links", {}).get("presave") or f"/{current['slug']}/"
-    cur_label = ("Pre-save" if not is_out(current) else "Stream") + f": {current['title']}"
+    # Alle aankomende pre-saves (nog niet uit) automatisch bovenaan, soonest first.
+    upcoming = [r for r in RELEASES if r["status"] == "presave" and not is_out(r)]
+    upcoming.sort(key=lambda r: r["date"])
+    if not upcoming:
+        upcoming = [RELEASES[0]]
+    btns = []
+    for r in upcoming:
+        href = r.get("links", {}).get("presave") or f"/{r['slug']}/"
+        label = ("Pre-save" if not is_out(r) else "Stream") + f": {r['title']}"
+        btns.append(f'  <a class="biglink hot" href="{href}"><span>{esc(label)}</span></a>')
+    presave_btns = "\n".join(btns)
     body = f"""
 <div class="linkstack">
   <div class="avatar" style="background-image:url('{ART.get("image","")}')"></div>
   <h1>Ydil Woods</h1>
   <div class="sub">Uplifting trance · melody first</div>
-  <a class="biglink hot" href="{cur_href}"><span>{esc(cur_label)}</span></a>
+{presave_btns}
   <a class="biglink" href="{ART['spotify']}"><span>Listen on Spotify</span></a>
   <a class="biglink" href="{ART['youtube']}"><span>YouTube</span></a>
   <a class="biglink" href="{ART['soundcloud']}"><span>SoundCloud</span></a>
