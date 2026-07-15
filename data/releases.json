@@ -24,7 +24,7 @@
       "cover": "https://i1.sndcdn.com/artworks-1y59dyTkvjOuq0fw-FyEzgA-t1080x1080.jpg",
       "featured": true,
       "links": {
-        "presave": null,
+        "presave": "https://distrokid.com/hyperfollow/ydilwoods/chasing-starlight-2",
         "spotify": null,
         "apple": null,
         "youtube": null
@@ -35,12 +35,17 @@
       "title": "In the Clouds",
       "artist": "Ydil Woods",
       "date": "2026-08-21",
-      "status": "announced",
+      "status": "presave",
       "versions": [],
       "isrcs": [],
       "cover": null,
       "featured": true,
-      "links": {}
+      "links": {
+        "presave": "https://distrokid.com/hyperfollow/ydilwoods/in-the-clouds-2",
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
     },
     {
       "slug": "if-we-fall-we-rise",
