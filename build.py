@@ -273,31 +273,40 @@ def build_release(r, i):
                 og_image=big_cover(r.get("cover")), depth=1, jsonld=ld))
 
 def build_links():
-    # Alle aankomende pre-saves (nog niet uit) automatisch bovenaan, soonest first.
-    upcoming = [r for r in RELEASES if r["status"] == "presave" and not is_out(r)]
-    upcoming.sort(key=lambda r: r["date"])
-    if not upcoming:
-        upcoming = [RELEASES[0]]
-    btns = []
+    """Link-in-bio voor Instagram — volledig gegenereerd uit releases.json.
+    Volgorde: (1) alle aankomende releases (pre-save/coming, soonest first),
+    (2) nieuwste 3 uitgebrachte tracks, (3) vaste kanalen.
+    Automatisch actueel: releases.json wijzigen → build → push, meer niet."""
+    items = []
+    upcoming = sorted([r for r in RELEASES if r["status"] in ("presave", "announced") and not is_out(r)],
+                      key=lambda r: r["date"])
     for r in upcoming:
-        href = r.get("links", {}).get("presave") or f"/{r['slug']}/"
-        label = ("Pre-save" if not is_out(r) else "Stream") + f": {r['title']}"
-        btns.append(f'  <a class="biglink hot" href="{href}"><span>{esc(label)}</span></a>')
-    presave_btns = "\n".join(btns)
+        when = date.fromisoformat(r["date"]).strftime("%b %d") if len(r["date"]) == 10 else "soon"
+        if r["status"] == "presave":
+            href = r.get("links", {}).get("presave") or f"/{r['slug']}/"
+            items.append(f'  <a class="biglink hot" href="{href}"><span>Pre-save: {esc(r["title"])} · {when}</span></a>')
+        else:
+            items.append(f'  <a class="biglink" href="/{r["slug"]}/"><span>Coming {when}: {esc(r["title"])}</span></a>')
+    latest = [r for r in RELEASES if is_out(r)][:3]
+    for r in latest:
+        items.append(f'  <a class="biglink" href="/{r["slug"]}/"><span>Stream: {esc(r["title"])}</span></a>')
+    items += [
+        f'  <a class="biglink" href="{ART["spotify"]}"><span>Spotify — all music</span></a>',
+        f'  <a class="biglink" href="{ART["youtube"]}"><span>YouTube</span></a>',
+        f'  <a class="biglink" href="{ART["soundcloud"]}"><span>SoundCloud</span></a>',
+        '  <a class="biglink" href="/"><span>YdilWoods.com</span></a>',
+    ]
     body = f"""
 <div class="linkstack">
   <div class="avatar" style="background-image:url('{ART.get("image","")}')"></div>
   <h1>Ydil Woods</h1>
   <div class="sub">Uplifting trance · melody first</div>
-{presave_btns}
-  <a class="biglink" href="{ART['spotify']}"><span>Listen on Spotify</span></a>
-  <a class="biglink" href="{ART['youtube']}"><span>YouTube</span></a>
-  <a class="biglink" href="{ART['soundcloud']}"><span>SoundCloud</span></a>
-  <a class="biglink" href="/#music"><span>All music</span></a>
-  <a class="biglink" href="{ART['instagram']}"><span>Instagram @ydilwoods</span></a>
+{chr(10).join(items)}
 </div>"""
     write("links/index.html", shell("Links — Ydil Woods", "All Ydil Woods links in one place.",
                                     body, SITE + "/links/", depth=1))
+    # Alias voor de Instagram-bio: ydilwoods.com/linkinbio → /links
+    write("_redirects", "/linkinbio /links 301\n")
 
 def build_about():
     body = f"""
