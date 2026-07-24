@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11",
+  "updated": "2026-07-24",
   "source": "DistroKid via Sena_controleoverzicht_tracks.csv (snapshot 2026-07-01) + releasekalender",
   "artist": {
     "name": "Ydil Woods",
@@ -15,7 +15,7 @@
       "title": "Chasing Starlight",
       "artist": "Ydil Woods",
       "date": "2026-07-24",
-      "status": "presave",
+      "status": "released",
       "versions": [
         "Original",
         "Extended Version"
@@ -25,7 +25,7 @@
       "featured": true,
       "links": {
         "presave": "https://distrokid.com/hyperfollow/ydilwoods/chasing-starlight-2",
-        "spotify": null,
+        "spotify": "https://open.spotify.com/album/5FbLfWtsjyk4QuG4jxXe8f",
         "apple": null,
         "youtube": null
       }
@@ -1155,5 +1155,5 @@
       }
     }
   ],
-  "embed_latest": "https://open.spotify.com/embed/album/3nI9ukt8Qh2JSlwwLGVApr"
+  "embed_latest": "https://open.spotify.com/embed/album/5FbLfWtsjyk4QuG4jxXe8f"
 }
