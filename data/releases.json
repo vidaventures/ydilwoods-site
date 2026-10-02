@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24",
+  "updated": "2026-10-02",
   "source": "DistroKid via Sena_controleoverzicht_tracks.csv (snapshot 2026-07-01) + releasekalender",
   "artist": {
     "name": "Ydil Woods",
@@ -10,6 +10,126 @@
     "soundcloud": "https://soundcloud.com/ydilwoods"
   },
   "releases": [
+    {
+      "slug": "rhythm-of-life",
+      "title": "Rhythm of Life",
+      "artist": "Ydil Woods",
+      "date": "2026-10-16",
+      "status": "presave",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [],
+      "cover": null,
+      "featured": true,
+      "links": {
+        "presave": "https://distrokid.com/hyperfollow/ydilwoods/rhythm-of-life",
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "echos-of-eivissa",
+      "title": "Echos of Eivissa",
+      "artist": "Ydil Woods & DJ LaMore",
+      "date": "2026-11-13",
+      "status": "announced",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "presave": null,
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "northern-lights",
+      "title": "Northern Lights",
+      "artist": "Ydil Woods",
+      "date": "2026-12-11",
+      "status": "presave",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "presave": "https://distrokid.com/hyperfollow/ydilwoods/northern-lights-2",
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "salinas-sundown",
+      "title": "Salinas Sundown",
+      "artist": "Ydil Woods & DJ LaMore",
+      "date": "2027-01-08",
+      "status": "announced",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [],
+      "cover": null,
+      "featured": false,
+      "links": {
+        "presave": null,
+        "spotify": null,
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "like-to-go-fast",
+      "title": "Like to Go Fast",
+      "artist": "Ydil Woods",
+      "date": "2026-09-18",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [],
+      "cover": "https://i.scdn.co/image/ab67616d00001e02fb6825dcf370467bc00ae3ae",
+      "featured": true,
+      "links": {
+        "presave": "https://distrokid.com/hyperfollow/ydilwoods/like-to-go-fast",
+        "spotify": "https://open.spotify.com/album/1H5DsQ4EG2MbSeaZhxUqLr",
+        "apple": null,
+        "youtube": null
+      }
+    },
+    {
+      "slug": "in-the-clouds",
+      "title": "In The Clouds",
+      "artist": "Ydil Woods",
+      "date": "2026-08-21",
+      "status": "released",
+      "versions": [
+        "Original",
+        "Extended Version"
+      ],
+      "isrcs": [],
+      "cover": "https://i.scdn.co/image/ab67616d00001e0276908aa42f95fc5590c04f9c",
+      "featured": true,
+      "links": {
+        "presave": "https://distrokid.com/hyperfollow/ydilwoods/in-the-clouds-2",
+        "spotify": "https://open.spotify.com/album/5VHMtBcCmDnwM8eu8vUQY6",
+        "apple": null,
+        "youtube": null
+      }
+    },
     {
       "slug": "chasing-starlight",
       "title": "Chasing Starlight",
@@ -26,23 +146,6 @@
       "links": {
         "presave": "https://distrokid.com/hyperfollow/ydilwoods/chasing-starlight-2",
         "spotify": "https://open.spotify.com/album/5FbLfWtsjyk4QuG4jxXe8f",
-        "apple": null,
-        "youtube": null
-      }
-    },
-    {
-      "slug": "in-the-clouds",
-      "title": "In the Clouds",
-      "artist": "Ydil Woods",
-      "date": "2026-08-21",
-      "status": "presave",
-      "versions": [],
-      "isrcs": [],
-      "cover": null,
-      "featured": true,
-      "links": {
-        "presave": "https://distrokid.com/hyperfollow/ydilwoods/in-the-clouds-2",
-        "spotify": null,
         "apple": null,
         "youtube": null
       }
@@ -1155,5 +1258,5 @@
       }
     }
   ],
-  "embed_latest": "https://open.spotify.com/embed/album/5FbLfWtsjyk4QuG4jxXe8f"
+  "embed_latest": "https://open.spotify.com/embed/album/1H5DsQ4EG2MbSeaZhxUqLr"
 }
