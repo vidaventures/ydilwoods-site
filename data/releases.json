@@ -151,27 +151,6 @@
       }
     },
     {
-      "slug": "if-we-fall-we-rise",
-      "title": "If we fall, we rise",
-      "artist": "Ydil Woods",
-      "date": "2026-06-26",
-      "status": "released",
-      "versions": [
-        "Original"
-      ],
-      "isrcs": [
-        "QT3FC2620722"
-      ],
-      "cover": "https://i.scdn.co/image/ab67616d00001e026c3d2acb760ba53d4aaec9ac",
-      "featured": false,
-      "links": {
-        "spotify": "https://open.spotify.com/album/3nI9ukt8Qh2JSlwwLGVApr",
-        "apple": null,
-        "youtube": null,
-        "spotify_track": "https://open.spotify.com/track/3rQESVEPdrZMBCvj6D710E"
-      }
-    },
-    {
       "slug": "pure-energy",
       "title": "Pure Energy",
       "artist": "Ydil Woods",
