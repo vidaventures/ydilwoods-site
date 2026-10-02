@@ -35,7 +35,7 @@
       "title": "Echos of Eivissa",
       "artist": "Ydil Woods & DJ LaMore",
       "date": "2026-11-13",
-      "status": "announced",
+      "status": "presave",
       "versions": [
         "Original",
         "Extended Version"
@@ -44,7 +44,7 @@
       "cover": null,
       "featured": false,
       "links": {
-        "presave": null,
+        "presave": "https://distrokid.com/hyperfollow/ydilwoodsanddjlamore/echos-of-eivissa",
         "spotify": null,
         "apple": null,
         "youtube": null
@@ -75,7 +75,7 @@
       "title": "Salinas Sundown",
       "artist": "Ydil Woods & DJ LaMore",
       "date": "2027-01-08",
-      "status": "announced",
+      "status": "presave",
       "versions": [
         "Original",
         "Extended Version"
@@ -84,7 +84,7 @@
       "cover": null,
       "featured": false,
       "links": {
-        "presave": null,
+        "presave": "https://distrokid.com/hyperfollow/ydilwoodsanddjlamore/salinas-sundown",
         "spotify": null,
         "apple": null,
         "youtube": null
