@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-16",
   "source": "DistroKid via Sena_controleoverzicht_tracks.csv (snapshot 2026-07-01) + releasekalender",
   "artist": {
     "name": "Ydil Woods",
@@ -15,17 +15,17 @@
       "title": "Rhythm of Life",
       "artist": "Ydil Woods",
       "date": "2026-10-16",
-      "status": "presave",
+      "status": "released",
       "versions": [
         "Original",
         "Extended Version"
       ],
       "isrcs": [],
-      "cover": null,
+      "cover": "https://i.scdn.co/image/ab67616d00001e0298638a969a9f4777617e7766",
       "featured": true,
       "links": {
         "presave": "https://distrokid.com/hyperfollow/ydilwoods/rhythm-of-life",
-        "spotify": null,
+        "spotify": "https://open.spotify.com/album/4KsCduh3WucZPyRt19HTSs",
         "apple": null,
         "youtube": null
       }
@@ -1237,5 +1237,5 @@
       }
     }
   ],
-  "embed_latest": "https://open.spotify.com/embed/album/1H5DsQ4EG2MbSeaZhxUqLr"
+  "embed_latest": "https://open.spotify.com/embed/album/4KsCduh3WucZPyRt19HTSs"
 }
