@@ -340,6 +340,20 @@ def build_meta():
         '<p style="color:var(--muted);margin:20px 0 34px">This page doesn\'t exist.</p>'
         '<a class="btn btn-hot" href="/"><span>Back home</span></a></section>', SITE + "/404.html"))
 
+def build_go():
+    """Doorverwijspagina's /go/<slug>/: tellen in Cloudflare Web Analytics, sturen dan door."""
+    path = os.path.join(ROOT, "data", "go.json")
+    if not os.path.exists(path):
+        return
+    for slug, url in json.load(open(path))["links"].items():
+        u = esc(url)
+        write(f"go/{slug}/index.html", f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="2;url={u}"><title>Ydil Woods</title>
+<style>body{{background:#0b0b14;color:#ddd;font-family:system-ui,sans-serif;display:grid;place-items:center;height:100vh;margin:0}}a{{color:#9ad}}</style>
+</head><body><p>Opening track&hellip; <a href="{u}">continue</a></p>
+<script>setTimeout(function(){{location.replace({json.dumps(url)})}},700);</script></body></html>""")
+
 def write(rel, content):
     p = os.path.join(OUT, rel)
     os.makedirs(os.path.dirname(p), exist_ok=True)
@@ -362,6 +376,7 @@ def main():
         build_release(r, i)
     build_links()
     build_about()
+    build_go()
     build_meta()
     n = sum(len(fs) for _, _, fs in os.walk(OUT))
     print(f"Built {n} files into public/ ({len(RELEASES)} release pages)")
