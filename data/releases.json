@@ -32,20 +32,20 @@
     },
     {
       "slug": "echos-of-eivissa",
-      "title": "Echos of Eivissa",
+      "title": "Echoes of Eivissa",
       "artist": "Ydil Woods & DJ LaMore",
       "date": "2026-11-13",
-      "status": "presave",
+      "status": "released",
       "versions": [
         "Original",
         "Extended Version"
       ],
       "isrcs": [],
-      "cover": null,
+      "cover": "https://i.scdn.co/image/ab67616d00001e02044242e012c3bc8f06281c8f",
       "featured": false,
       "links": {
         "presave": "https://distrokid.com/hyperfollow/ydilwoodsanddjlamore/echoes-of-eivissa",
-        "spotify": null,
+        "spotify": "https://open.spotify.com/album/3HWak6NfZfMBZHGaLosFF0",
         "apple": null,
         "youtube": null
       }

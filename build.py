@@ -91,6 +91,7 @@ footer{position:relative;z-index:1;padding:38px 5vw;display:flex;justify-content
 footer a{color:var(--ink);text-decoration:none;margin-left:20px;font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
 footer a:hover{color:var(--magenta)}
 .embed{max-width:720px}
+.reel{max-width:360px}.reel video{width:100%;aspect-ratio:9/16;border-radius:12px;background:#000;display:block;margin-bottom:18px}
 /* hero */
 .hero{padding:7vh 5vw 9vh;display:grid;grid-template-columns:1.2fr .8fr;gap:6vw;align-items:center}
 @media(max-width:820px){.hero{grid-template-columns:1fr}}
@@ -220,6 +221,12 @@ def build_home():
 <div class="embed"><iframe style="border-radius:12px" src="{DATA["embed_latest"]}" width="100%" height="152"
  frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
 </section>"""
+    reel = """
+<section><h2 class="sec">This is <em>Ydil Woods</em></h2>
+<div class="reel"><video src="/assets/reel-this-is-ydil-woods.mp4" poster="/assets/reel-this-is-ydil-woods.jpg"
+ controls playsinline preload="none"></video>
+<p><a class="btn btn-hot" href="https://open.spotify.com/playlist/3HoC0gKfy1voxDUtyhHYcq"><span>Follow the playlist</span></a></p></div>
+</section>"""  # Mark 14-11: regen-reel 8 tracks (variant M)
     featured = [r for r in RELEASES if r.get("featured")]
     rest = [r for r in RELEASES if not r.get("featured")]
     music = f"""
@@ -240,7 +247,7 @@ For fans of Ben Gold and Ralphie B. <a href="/about/" style="color:var(--gold)">
           "genre": "Uplifting Trance", "url": SITE,
           "sameAs": [ART["spotify"], ART["instagram"], ART["youtube"]]}
     desc = "Official website of Ydil Woods. Euphoric, melody-first uplifting trance."
-    write("index.html", shell("Ydil Woods — Uplifting Trance", desc, hero + embed + music + about, SITE + "/",
+    write("index.html", shell("Ydil Woods — Uplifting Trance", desc, hero + embed + reel + music + about, SITE + "/",
                               og_image=big_cover(hero_r.get("cover")), jsonld=ld))
 
 def build_release(r, i):
@@ -371,6 +378,9 @@ def main():
     src_logo = os.path.join(ROOT, "assets", "yw-logo.png")
     if os.path.exists(src_logo):
         shutil.copy(src_logo, os.path.join(OUT, "assets", "yw-logo.png"))
+    for f in ("reel-this-is-ydil-woods.mp4", "reel-this-is-ydil-woods.jpg"):
+        if os.path.exists(os.path.join(ROOT, "assets", f)):
+            shutil.copy(os.path.join(ROOT, "assets", f), os.path.join(OUT, "assets", f))
     build_home()
     for i, r in enumerate(RELEASES):
         build_release(r, i)
