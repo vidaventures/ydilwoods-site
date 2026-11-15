@@ -105,6 +105,7 @@ footer a:hover{color:var(--magenta)}
 @media(max-width:820px){.rel{grid-template-columns:1fr}}
 .rel h1{font-size:clamp(42px,6.5vw,84px);line-height:.94;background:linear-gradient(100deg,#fff 20%,var(--violet) 55%,var(--magenta) 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .rel .date{color:var(--muted);margin:20px 0 32px;font-size:15px;letter-spacing:.12em;text-transform:uppercase}
+.tracks{max-width:520px;margin:0 auto;padding-left:1.4em;color:var(--muted);font-size:17px;line-height:2;font-weight:300}
 .note{max-width:640px;margin:0 auto;color:var(--muted);font-size:18px;line-height:1.75;font-weight:300;text-align:center}
 /* links page */
 .linkstack{max-width:520px;margin:0 auto;padding:5vh 5vw 8vh;position:relative;z-index:1}
@@ -170,7 +171,7 @@ def badge(r):
     return ""
 
 def card(r, i):
-    sub = r["date"][:4] + " · " + ("COMING SOON" if r["status"] == "announced" else "SINGLE")
+    sub = r["date"][:4] + " · " + ("COMING SOON" if r["status"] == "announced" else ("EP" if len(r.get("tracks", [])) > 2 else "SINGLE"))
     return (f'<a class="t" href="/{r["slug"]}/"><div class="art" style="{art_css(r,i)}"></div>{badge(r)}'
             f'<div class="label">{esc(r["title"])}<small>{sub}</small></div></a>')
 
@@ -202,7 +203,7 @@ def stream_buttons(r, hero=False):
 def build_home():
     hero_r = next((r for r in RELEASES if r["status"] in ("presave", "announced") and r["date"] >= TODAY), RELEASES[0])
     out_now = is_out(hero_r)
-    tagline = f'New single · {date.fromisoformat(hero_r["date"]).strftime("%B %d").replace(" 0"," ")}' if not out_now else "Out now"
+    tagline = f'New {"EP" if len(hero_r.get("tracks", [])) > 2 else "single"} · {date.fromisoformat(hero_r["date"]).strftime("%B %d").replace(" 0"," ")}' if not out_now else "Out now"
     cover_inner = "" if hero_r.get("cover") else '<span class="ph">cover reveal soon</span>'
     hero = f"""
 <div class="hero">
@@ -256,6 +257,9 @@ def build_release(r, i):
     status_line = f"Out {when}" if not out_now else f"Released {when}"
     cover_inner = "" if r.get("cover") else '<span class="ph">cover reveal soon</span>'
     note = f'<section><p class="note">{esc(r["note"])}</p></section>' if r.get("note") else ""
+    if len(r.get("tracks", [])) > 2:
+        note += ('<section><h2 class="sec">Track<em>list</em></h2><ol class="tracks">'
+                 + "".join(f"<li>{esc(t)}</li>" for t in r["tracks"]) + "</ol></section>")
     others = [x for x in RELEASES if x["slug"] != r["slug"] and x.get("featured")][:3]
     more = (f'<section><h2 class="sec">More <em>music</em></h2><div class="rail">'
             f'{"".join(card(x,j) for j,x in enumerate(others))}</div></section>')

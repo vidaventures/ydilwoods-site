@@ -56,11 +56,14 @@
       "artist": "Ydil Woods",
       "date": "2026-12-11",
       "status": "presave",
-      "versions": [
-        "Original",
-        "Extended Version"
+      "isrcs": [
+        "QTAEY2623250",
+        "QT6J32645940",
+        "QT6FF2686692",
+        "QTAEY2623251",
+        "QT6J32645941",
+        "QT6FF2686693"
       ],
-      "isrcs": [],
       "cover": null,
       "featured": false,
       "links": {
@@ -68,7 +71,15 @@
         "spotify": null,
         "apple": null,
         "youtube": null
-      }
+      },
+      "tracks": [
+        "Northern Lights",
+        "Rhythm of Life",
+        "Like to Go Fast",
+        "Northern Lights (Extended Version)",
+        "Rhythm of Life (Extended Version)",
+        "Like to Go Fast (Extended Version)"
+      ]
     },
     {
       "slug": "salinas-sundown",
