@@ -371,10 +371,11 @@ def build_listen():
     """Advertentie-landingspagina's /listen/<slug>/ met Meta-pixel (vervanger Hypeddit smart link)."""
     pages = {
         "best-of-trance": {
-            "title": "Pure Energy — Ydil Woods",
-            "sub": "Play it in the Best of Trance playlist",
-            "cover": big_cover(next(r["cover"] for r in RELEASES if r.get("slug") == "pure-energy")),
-            "url": "https://open.spotify.com/track/3yvSJEfMnnrC3nL35WMf9C?context=spotify:playlist:2YcKcfRo9UpMkeuaNj3Qme",
+            "title": "Best of Trance",
+            "sub": "All future favorites and tunes of the century — follow the playlist on Spotify",
+            "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c219fe2dd9f8d72cf83e52621",
+            "url": "https://open.spotify.com/playlist/2YcKcfRo9UpMkeuaNj3Qme",
+            "button": "Open playlist on Spotify",
         },
     }
     for slug, p in pages.items():
@@ -391,7 +392,7 @@ a.play{{display:inline-block;background:#1ed760;color:#000;font-weight:700;paddi
 </head><body><main>
 <img src="{esc(p['cover'])}" alt="{esc(p['title'])}" width="340" height="340">
 <h1>{esc(p['title'])}</h1><p>{esc(p['sub'])}</p>
-<a class="play" id="play" href="{esc(p['url'])}">&#9654; Play on Spotify</a>
+<a class="play" id="play" href="{esc(p['url'])}">&#9654; {esc(p['button'])}</a>
 </main>
 <script>document.getElementById('play').addEventListener('click',function(e){{e.preventDefault();var go=function(){{location.href={u}}};
 try{{fbq('trackCustom','Hypeddit Smart Link Click')}}catch(x){{}}setTimeout(go,300);}});</script>
