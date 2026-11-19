@@ -365,6 +365,39 @@ def build_go():
 </head><body><p>Opening track&hellip; <a href="{u}">continue</a></p>
 <script>setTimeout(function(){{location.replace({json.dumps(url)})}},700);</script></body></html>""")
 
+PIXEL_ID = "1113648299344159"  # Meta "My Pixel" (zelfde als Hypeddit, behoudt leerdata)
+
+def build_listen():
+    """Advertentie-landingspagina's /listen/<slug>/ met Meta-pixel (vervanger Hypeddit smart link)."""
+    pages = {
+        "best-of-trance": {
+            "title": "Pure Energy — Ydil Woods",
+            "sub": "Play it in the Best of Trance playlist",
+            "cover": big_cover(next(r["cover"] for r in RELEASES if r.get("slug") == "pure-energy")),
+            "url": "https://open.spotify.com/track/3yvSJEfMnnrC3nL35WMf9C?context=spotify:playlist:2YcKcfRo9UpMkeuaNj3Qme",
+        },
+    }
+    for slug, p in pages.items():
+        u = json.dumps(p["url"])
+        write(f"listen/{slug}/index.html", f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{esc(p['title'])}</title>
+<script>!function(f,b,e,v,n,t,s){{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)}};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','{PIXEL_ID}');fbq('track','PageView');fbq('trackCustom','Hypeddit Smart Link Visit');</script>
+<style>body{{background:#0b0b14;color:#eee;font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center}}
+main{{padding:24px 16px;max-width:420px}}img{{width:100%;max-width:340px;border-radius:12px;box-shadow:0 10px 40px #0008}}
+h1{{font-size:1.4rem;margin:18px 0 4px}}p{{color:#aab;margin:0 0 22px}}
+a.play{{display:inline-block;background:#1ed760;color:#000;font-weight:700;padding:14px 34px;border-radius:999px;text-decoration:none;font-size:1.1rem}}</style>
+</head><body><main>
+<img src="{esc(p['cover'])}" alt="{esc(p['title'])}" width="340" height="340">
+<h1>{esc(p['title'])}</h1><p>{esc(p['sub'])}</p>
+<a class="play" id="play" href="{esc(p['url'])}">&#9654; Play on Spotify</a>
+</main>
+<script>document.getElementById('play').addEventListener('click',function(e){{e.preventDefault();var go=function(){{location.href={u}}};
+try{{fbq('trackCustom','Hypeddit Smart Link Click')}}catch(x){{}}setTimeout(go,300);}});</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={PIXEL_ID}&ev=PageView&noscript=1"></noscript>
+</body></html>""")
+
 def write(rel, content):
     p = os.path.join(OUT, rel)
     os.makedirs(os.path.dirname(p), exist_ok=True)
@@ -391,6 +424,7 @@ def main():
     build_links()
     build_about()
     build_go()
+    build_listen()
     build_meta()
     n = sum(len(fs) for _, _, fs in os.walk(OUT))
     print(f"Built {n} files into public/ ({len(RELEASES)} release pages)")
